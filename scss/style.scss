@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Uchen&display=swap');
+
+$bg-color: #F3F4F6;
+$middle-color: #E5E7EB;
+
+body{
+  font-family: 'Uchen', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+.description{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  p{
+    margin: 0;
+    color: rgb(131, 140, 177);
+  }
+  span{
+    padding: 0 15px;
+    border-radius: 10px;
+  }
+  .easy{background-color: rgb(192, 255, 192);}
+  .middle{background-color: rgb(254, 255, 192);}
+  .hard{background-color: rgb(255, 183, 183);}
+}
+
+
+.toStyle{
+  background-color: $bg-color;
+  padding: 40px;
+  border: 2px solid $middle-color;
+  border-radius: 10px;
+  width: 700px;
+  h3{
+    margin-top: 0;
+  }
+}
+
+#options{
+  display: flex;
+  flex-direction: column;
+  div{
+    display: flex;
+    align-items: center;
+    input{
+      margin: 0;
+    }
+    label{
+      padding-left: 15px;
+    }
+  }
+}
+
+button{
+  color: blue;
+  background-color: #DBEAFE;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+button:hover{
+  background-color: darken(#DBEAFE, 10%);
+}
+
+.end-screen{
+  background-color: $bg-color;
+  padding: 40px;
+  border: 2px solid $middle-color;
+  border-radius: 10px;
+  width: 700px;
+  #you-answered{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: "Oswald";
+  }
+  h2{
+    font-family: "Oswald";
+    margin: 0;
+    border-bottom: 2px solid $middle-color;
+  }
+  .green{
+    background-color: rgb(192, 255, 192);
+  }
+  .red{
+    background-color: rgb(255, 183, 183);
+  }
+  div{
+    div{
+      padding: 20px 0;
+      border-top: 2px solid $middle-color;
+    }
+  }
+}
+
+.hidden{
+  display: none;
+}

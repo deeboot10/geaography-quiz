@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <h1>Geography quiz</h1>
+  <div id="question">
+    <div class="description">
+      <p id="question-number-container">Question no. <span id="questionNumber"></span></p>
+      <span class="level"></span>
+    </div>
+    <div class="toStyle">
+      <h3 id="questionText"></h3>
+      <div id="options">
+        <div>
+          <input type="radio" id="op1" name="question">
+          <label for="op1" class="op1">1</label>
+        </div>
+        <div>
+          <input type="radio" id="op2" name="question">
+          <label for="op2" class="op2">2</label>
+        </div>
+        <div>
+          <input type="radio" id="op3" name="question">
+          <label for="op3" class="op3">3</label>
+        </div>
+      </div>
+    </div>
+
+    <button>Next</button>
+
+  </div>
+
+  <div class="end-screen hidden">
+    <h2>Results</h2>
+    <p id="you-answered">You answered <span></span>/10 questions correctly.</p>
+    <div>
+
+    </div>
+  </div>
+
+
+</body>
+</html>
